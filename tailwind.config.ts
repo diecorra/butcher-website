@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -14,7 +14,24 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    fontFamily: {
+      oswald: ['var(--font-oswald)'],
+    },
+    animation: {
+      halfSpin: 'halfSpin 0.3s linear',
+    },
+
+    keyframes: {
+      halfSpin: {
+        from: {
+          transform: 'rotate(0deg)',
+        },
+        to: {
+          transform: 'rotate(90deg)',
+        },
+      },
+    },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
