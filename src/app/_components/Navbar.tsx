@@ -4,8 +4,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import logo from '../../../public/images/butcher-logo.jpg';
 import Image from 'next/image';
 import { IoMdClose } from 'react-icons/io';
-import { FaInstagram } from 'react-icons/fa';
-import { openInNewTab } from '../utils/openURLNewTab';
+import { openInNewTab } from '../_utils/openURLNewTab';
 import { FaSquareFacebook } from 'react-icons/fa6';
 import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
@@ -30,9 +29,9 @@ const Navbar = () => {
   }, [isNavOpen]);
 
   return (
-    <nav className="pt-4">
-      <div className="container pb-3 px-8 mx-auto flex justify-between items-center">
-        <div className="flex flex-row gap-5 items-center">
+    <nav className="h-16 w-full flex items-center">
+      <div className="container px-8 flex justify-between items-center">
+        <div className="flex gap-5 items-center">
           <Image src={logo} width={200} alt="Butcher Logo" priority />
           <RiInstagramFill
             className="icon hidden md:block"
@@ -73,7 +72,12 @@ const Navbar = () => {
 
         <div className="md:hidden z-30">
           <button className="focus:outline-none">
-            {changeIcon && <IoMdClose className="icon" onClick={toggleMenu} />}
+            {changeIcon && (
+              <IoMdClose
+                onClick={toggleMenu}
+                className={changeIcon ? 'icon' : 'hidden'}
+              />
+            )}
             <RxHamburgerMenu
               className={
                 isNavOpen
@@ -93,7 +97,7 @@ const Navbar = () => {
       >
         <a href="#home">Home</a>
         <a href="#chisiamo">Chi Siamo</a>
-        <a href="#menù">Menu'</a>
+        <a href="#menu">Menù</a>
         <a href="#contatti">Contatti</a>
         <div className="flex flex-row gap-4">
           <RiInstagramFill
