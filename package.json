@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "i18next": "^23.7.7",
     "next": "14.0.3",
     "next-i18next": "^15.0.0",
