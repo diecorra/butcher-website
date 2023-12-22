@@ -19,7 +19,7 @@ const HomePage = () => {
       </div>
       <div className="flex gap-4">
         <div
-          className="p-1 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomLeft animate__delay-2s"
+          className="p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomLeft animate__delay-2s"
           onClick={() =>
             openInNewTab(
               `https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`
@@ -29,7 +29,7 @@ const HomePage = () => {
           <IoLogoWhatsapp className="icon block" fill="#25D366" />
           Vuoi ordinare?
         </div>
-        <div className="p-1 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomRight animate__delay-2s">
+        <div className="p-1 px-3 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomRight animate__delay-2s">
           <TbMeat className="icon block" fill="red" />
           Menù
         </div>

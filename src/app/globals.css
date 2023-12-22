@@ -15,7 +15,7 @@ body {
 }
 
 .mobile-navbar {
-  @apply fixed top-0 w-full h-full bg-slate-700 duration-300 transition-all flex flex-col items-center justify-center gap-20 bg-opacity-70 z-20;
+  @apply fixed top-0 w-full h-full bg-[rgba(0,0,0,0.9)] duration-300 transition-all flex flex-col items-center justify-center gap-20 bg-opacity-70 z-20;
 }
 
 h1 {

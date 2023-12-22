@@ -93,7 +93,7 @@ const Navbar = () => {
         <a href="#chisiamo">Chi Siamo</a>
         <a href="#menu">Menù</a>
         <a href="#contatti">Contatti</a>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row gap-10">
           <RiInstagramFill
             className="icon"
             onClick={() => openInNewTab(igLink)}
