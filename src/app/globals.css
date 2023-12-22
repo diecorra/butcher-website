@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 * {
-  @apply text-base text-white m-0 p-0 box-border;
+  @apply text-base text-white m-0 p-0;
 }
 
 body {
-  background: url('../../public/images/background.jpg') no-repeat fixed top;
-  background-size: cover;
+  @apply bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-fixed bg-cover max-h-screen;
 }
 
 .page {
-  @apply flex min-h-screen w-screen flex-col;
+  @apply w-full h-full;
 }
 
 .mobile-navbar {
-  @apply fixed top-0 w-full h-full bg-slate-700 duration-300 transition-all flex flex-col items-center justify-center gap-20 pt-4 bg-opacity-70 z-20;
+  @apply fixed top-0 w-full h-full bg-slate-700 duration-300 transition-all flex flex-col items-center justify-center gap-20 bg-opacity-70 z-20;
+}
+
+h1 {
+  @apply text-3xl md:text-5xl;
+}
+
+.iconTitle {
+  @apply text-3xl md:text-5xl;
 }
 
 .nav-link {

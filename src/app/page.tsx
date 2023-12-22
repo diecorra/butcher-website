@@ -1,10 +1,16 @@
 import Navbar from './_components/Navbar';
+import HomePage from './_components/HomePage';
+import { twMerge } from 'tailwind-merge';
+import BackgroundOpacity from './_shared/BackgroundOpacity';
 
 export default async function Home() {
   return (
-    <section className="page">
+    <div className={twMerge('h-screen', 'h-[calc(100dvh)]')}>
       <Navbar />
-      <hr className="border-solid z-10" />
-    </section>
+      <section className="page">
+        <BackgroundOpacity />
+        <HomePage />
+      </section>
+    </div>
   );
 }

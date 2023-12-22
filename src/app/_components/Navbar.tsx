@@ -1,14 +1,13 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import logo from '../../../public/images/butcher-logo.jpg';
-import Image from 'next/image';
 import { IoMdClose } from 'react-icons/io';
 import { openInNewTab } from '../_utils/openURLNewTab';
 import { FaSquareFacebook } from 'react-icons/fa6';
 import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdPlace } from 'react-icons/md';
+import { fbLink, igLink, placeLink, waApi } from '../_utils/links';
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -29,29 +28,24 @@ const Navbar = () => {
   }, [isNavOpen]);
 
   return (
-    <nav className="h-16 w-full flex items-center">
+    <nav className="h-16 w-full flex items-center absolute z-20">
       <div className="container px-8 flex justify-between items-center">
         <div className="flex gap-5 items-center">
-          <Image src={logo} width={200} alt="Butcher Logo" priority />
           <RiInstagramFill
-            className="icon hidden md:block"
-            onClick={() => openInNewTab('https://www.instagram.com/')}
+            className="hidden md:block icon hover:fill-orange-300"
+            onClick={() => openInNewTab(igLink)}
           />
           <FaSquareFacebook
-            className="icon hidden md:block"
-            onClick={() => openInNewTab('https://www.facebook.com/')}
+            className="icon hidden md:block hover:fill-orange-300"
+            onClick={() => openInNewTab(fbLink)}
           />
           <IoLogoWhatsapp
-            className="icon hidden md:block"
-            onClick={() =>
-              openInNewTab(
-                `https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`
-              )
-            }
+            className="icon hidden md:block hover:fill-orange-300"
+            onClick={() => openInNewTab(`${waApi}${process.env.phoneNumber}`)}
           />
           <MdPlace
-            className="icon hidden md:block"
-            onClick={() => openInNewTab(`${process.env.localization}`)}
+            className="icon hidden md:block hover:fill-orange-300"
+            onClick={() => openInNewTab(placeLink)}
           />
         </div>
 
@@ -102,24 +96,17 @@ const Navbar = () => {
         <div className="flex flex-row gap-4">
           <RiInstagramFill
             className="icon"
-            onClick={() => openInNewTab('https://www.instagram.com/')}
+            onClick={() => openInNewTab(igLink)}
           />
           <FaSquareFacebook
             className="icon"
-            onClick={() => openInNewTab('https://www.facebook.com/')}
+            onClick={() => openInNewTab(fbLink)}
           />
           <IoLogoWhatsapp
             className="icon"
-            onClick={() =>
-              openInNewTab(
-                `https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`
-              )
-            }
+            onClick={() => openInNewTab(`${waApi}${process.env.phoneNumber}`)}
           />
-          <MdPlace
-            className="icon"
-            onClick={() => openInNewTab(`${process.env.localization}`)}
-          />
+          <MdPlace className="icon" onClick={() => openInNewTab(placeLink)} />
         </div>
       </div>
     </nav>
