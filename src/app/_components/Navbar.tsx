@@ -57,11 +57,12 @@ const Navbar = () => {
           <Link href="/menu" className="nav-link">
             Menù
           </Link>
-          <Link href="/contacts" className="nav-link">
-            Contatti
-          </Link>
+
           <Link href="/about" className="nav-link">
             Chi Siamo
+          </Link>
+          <Link href="/contacts" className="nav-link">
+            Contatti
           </Link>
         </div>
 
@@ -90,10 +91,19 @@ const Navbar = () => {
           isNavOpen ? 'left-0' : '-left-full'
         }`}
       >
-        <a href="#home">Home</a>
-        <a href="#chisiamo">Chi Siamo</a>
-        <a href="#menu">Menù</a>
-        <a href="#contatti">Contatti</a>
+        <Link href="/" className="nav-link">
+          Home
+        </Link>
+        <Link href="/menu" className="nav-link">
+          Menù
+        </Link>
+
+        <Link href="/about" className="nav-link">
+          Chi Siamo
+        </Link>
+        <Link href="/contacts" className="nav-link">
+          Contatti
+        </Link>
         <div className="flex flex-row gap-10">
           <RiInstagramFill
             className="icon"
