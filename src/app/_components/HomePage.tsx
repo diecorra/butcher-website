@@ -2,9 +2,9 @@
 import { GiBull } from 'react-icons/gi';
 import Title from '../_shared/Title';
 import { TbMeat } from 'react-icons/tb';
-import { openInNewTab } from '../_utils/openURLNewTab';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import 'animate.css/animate.min.css';
+import Link from 'next/link';
 
 const HomePage = () => {
   return (
@@ -18,21 +18,21 @@ const HomePage = () => {
         <h2 className="text-xl">La migliore qualità, al miglior prezzo.</h2>
       </div>
       <div className="flex gap-4">
-        <div
-          className="p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomLeft animate__delay-2s"
-          onClick={() =>
-            openInNewTab(
-              `https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`
-            )
-          }
+        <Link
+          target="_blank"
+          href={`https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`}
         >
-          <IoLogoWhatsapp className="icon block" fill="#25D366" />
-          Vuoi ordinare?
-        </div>
-        <div className="p-1 px-3 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomRight animate__delay-2s">
-          <TbMeat className="icon block" fill="red" />
-          Menù
-        </div>
+          <div className="p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomLeft animate__delay-2s hover:border-orange-300">
+            <IoLogoWhatsapp className="icon block" fill="#25D366" />
+            Vuoi ordinare?
+          </div>
+        </Link>
+        <Link href="/menu">
+          <div className="p-1 px-3 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomRight animate__delay-2s hover:border-orange-300">
+            <TbMeat className="icon block" fill="red" />
+            Menù
+          </div>
+        </Link>
       </div>
     </div>
   );

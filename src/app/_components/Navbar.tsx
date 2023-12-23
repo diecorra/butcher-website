@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoMdClose } from 'react-icons/io';
-import { openInNewTab } from '../_utils/openURLNewTab';
 import { FaSquareFacebook } from 'react-icons/fa6';
 import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
@@ -32,22 +31,18 @@ const Navbar = () => {
     <nav className="h-16 w-full flex items-center absolute z-20">
       <div className="container px-8 flex justify-between items-center">
         <div className="flex gap-5 items-center">
-          <RiInstagramFill
-            className="hidden md:block icon hover:fill-orange-300"
-            onClick={() => openInNewTab(igLink)}
-          />
-          <FaSquareFacebook
-            className="icon hidden md:block hover:fill-orange-300"
-            onClick={() => openInNewTab(fbLink)}
-          />
-          <IoLogoWhatsapp
-            className="icon hidden md:block hover:fill-orange-300"
-            onClick={() => openInNewTab(`${waApi}${process.env.phoneNumber}`)}
-          />
-          <MdPlace
-            className="icon hidden md:block hover:fill-orange-300"
-            onClick={() => openInNewTab(placeLink)}
-          />
+          <Link href={igLink} target="_blank">
+            <RiInstagramFill className="hidden md:block icon hover:fill-orange-300" />
+          </Link>
+          <Link href={fbLink} target="_blank">
+            <FaSquareFacebook className="icon hidden md:block hover:fill-orange-300" />
+          </Link>
+          <Link href={`${waApi}${process.env.phoneNumber}`} target="_blank">
+            <IoLogoWhatsapp className="icon hidden md:block hover:fill-orange-300" />
+          </Link>
+          <Link href={placeLink} target="_blank">
+            <MdPlace className="icon hidden md:block hover:fill-orange-300" />
+          </Link>
         </div>
 
         <div className="hidden md:flex space-x-4 [&>a]:text-lg">
@@ -97,7 +92,6 @@ const Navbar = () => {
         <Link href="/menu" className="nav-link">
           Menù
         </Link>
-
         <Link href="/about" className="nav-link">
           Chi Siamo
         </Link>
@@ -105,19 +99,18 @@ const Navbar = () => {
           Contatti
         </Link>
         <div className="flex flex-row gap-10">
-          <RiInstagramFill
-            className="icon"
-            onClick={() => openInNewTab(igLink)}
-          />
-          <FaSquareFacebook
-            className="icon"
-            onClick={() => openInNewTab(fbLink)}
-          />
-          <IoLogoWhatsapp
-            className="icon"
-            onClick={() => openInNewTab(`${waApi}${process.env.phoneNumber}`)}
-          />
-          <MdPlace className="icon" onClick={() => openInNewTab(placeLink)} />
+          <Link href={igLink}>
+            <RiInstagramFill className="icon" />
+          </Link>
+          <Link href={fbLink}>
+            <FaSquareFacebook className="icon" />
+          </Link>
+          <Link href={`${waApi}${process.env.phoneNumber}`}>
+            <IoLogoWhatsapp className="icon" />
+          </Link>
+          <Link href={placeLink}>
+            <MdPlace className="icon" />
+          </Link>
         </div>
       </div>
     </nav>
