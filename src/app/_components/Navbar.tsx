@@ -8,6 +8,7 @@ import { RiInstagramFill } from 'react-icons/ri';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdPlace } from 'react-icons/md';
 import { fbLink, igLink, placeLink, waApi } from '../_utils/links';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -50,18 +51,18 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-4 [&>a]:text-lg">
-          <a href="#home" className="nav-link">
+          <Link href="/" className="nav-link">
             Home
-          </a>
-          <a href="#chisiamo" className="nav-link">
-            Chi Siamo
-          </a>
-          <a href="#menu" className="nav-link">
+          </Link>
+          <Link href="/menu" className="nav-link">
             Menù
-          </a>
-          <a href="#contatti" className="nav-link">
+          </Link>
+          <Link href="/contacts" className="nav-link">
             Contatti
-          </a>
+          </Link>
+          <Link href="/about" className="nav-link">
+            Chi Siamo
+          </Link>
         </div>
 
         <div className="md:hidden z-30">
