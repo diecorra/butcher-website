@@ -7,11 +7,11 @@
 }
 
 body {
-  @apply bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-fixed bg-cover max-h-screen;
+  @apply bg-black bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-fixed bg-cover;
 }
 
 .page {
-  @apply w-full h-full;
+  @apply w-full h-full overflow-y-auto overflow-x-hidden;
 }
 
 .mobile-navbar {
