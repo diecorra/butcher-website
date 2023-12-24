@@ -14,7 +14,7 @@ const Custom404 = () => {
         <div className="h-full z-10 relative flex flex-col justify-center items-center gap-5">
           <span className="text-6xl text-orange-400">Oops!</span>
           <div className="flex flex-col gap-4 items-center">
-            <span className="text-2xl md:text-3xl">
+            <span className="text-xl md:text-3xl">
               Non riusciamo a trovare la pagina richiesta.
             </span>
             <Link href="/">
