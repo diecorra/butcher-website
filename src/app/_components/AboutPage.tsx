@@ -25,7 +25,7 @@ const AboutPage = () => {
           l'innovazione in ogni fetta di carne.`}
           </p>
           <Image
-            className="pb-4 animate__animated animate__fadeInBottomLeft animate__delay-1s h-auto"
+            className="mb-4 animate__animated animate__fadeInBottomLeft animate__delay-1s h-auto rounded-sm border-solid border-2 border-orange-300"
             src={logo}
             width={300}
             alt="Chi Siamo"
