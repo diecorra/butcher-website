@@ -11,7 +11,7 @@ body {
 }
 
 .page {
-  @apply w-full h-full overflow-y-auto overflow-x-hidden;
+  @apply w-full h-full overflow-y-auto overflow-x-hidden px-8 md:px-20 lg:p-0;
 }
 
 .mobile-navbar {
@@ -19,11 +19,11 @@ body {
 }
 
 h1 {
-  @apply text-3xl md:text-5xl;
+  @apply text-3xl lg:text-5xl;
 }
 
 .iconTitle {
-  @apply text-3xl md:text-5xl;
+  @apply text-3xl lg:text-5xl;
 }
 
 .nav-link {

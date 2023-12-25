@@ -32,20 +32,20 @@ const Navbar = () => {
       <div className="container px-8 flex justify-between items-center">
         <div className="flex gap-5 items-center">
           <Link href={igLink} target="_blank">
-            <RiInstagramFill className="hidden md:block icon hover:fill-orange-300" />
+            <RiInstagramFill className="hidden lg:block icon hover:fill-orange-300" />
           </Link>
           <Link href={fbLink} target="_blank">
-            <FaSquareFacebook className="icon hidden md:block hover:fill-orange-300" />
+            <FaSquareFacebook className="icon hidden lg:block hover:fill-orange-300" />
           </Link>
           <Link href={`${waApi}${process.env.phoneNumber}`} target="_blank">
-            <IoLogoWhatsapp className="icon hidden md:block hover:fill-orange-300" />
+            <IoLogoWhatsapp className="icon hidden lg:block hover:fill-orange-300" />
           </Link>
           <Link href={placeLink} target="_blank">
-            <MdPlace className="icon hidden md:block hover:fill-orange-300" />
+            <MdPlace className="icon hidden lg:block hover:fill-orange-300" />
           </Link>
         </div>
 
-        <div className="hidden md:flex space-x-4 [&>a]:text-lg">
+        <div className="hidden lg:flex space-x-4 [&>a]:text-lg">
           <Link href="/" className="nav-link">
             Home
           </Link>
@@ -61,19 +61,19 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="md:hidden z-30">
+        <div className="lg:hidden z-30">
           <button className="focus:outline-none">
             {changeIcon && (
               <IoMdClose
                 onClick={toggleMenu}
-                className={changeIcon ? 'icon' : 'hidden'}
+                className={changeIcon ? 'icon md:text-6xl' : 'hidden'}
               />
             )}
             <RxHamburgerMenu
               className={
                 isNavOpen
                   ? `${changeIcon && 'hidden'} animate-halfSpin icon`
-                  : 'icon'
+                  : 'icon md:text-6xl'
               }
               onClick={toggleMenu}
             />
@@ -82,7 +82,7 @@ const Navbar = () => {
       </div>
       <div className="absolute inset-0 pointer-events-none z-10"></div>
       <div
-        className={`md:hidden mobile-navbar [&>a]:text-2xl ${
+        className={`lg:hidden mobile-navbar [&>a]:text-2xl ${
           isNavOpen ? 'left-0' : '-left-full'
         }`}
       >

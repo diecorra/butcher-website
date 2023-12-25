@@ -4,13 +4,13 @@ import logo from '../../../public/images/aboutPic.jpg';
 
 const AboutPage = () => {
   return (
-    <section className="h-full w-full z-10 relative">
-      <div className="h-16 w-full flex justify-center items-center">
-        <h1 className="text-5xl text-orange-300">CHI SIAMO</h1>
+    <section className="w-full lg:h-screen z-10 relative">
+      <div className="h-16 top-0 w-full flex justify-center items-center">
+        <h1 className="text-5xl text-orange-300 pb-7 pt-5 ">CHI SIAMO</h1>
       </div>
-      <div className="md:w-full md:h-[calc(100vh-4rem)] md:flex md:flex-row md:justify-center md:items-center">
-        <div className="flex flex-col md:flex-row md:w-4/5 justify-center items-center md:gap-4">
-          <p className="p-5 text-justify text-sm md:text-xl animate__animated animate__fadeInBottomRight animate__delay-1s">
+      <div className="md:w-full md:flex md:justify-center xl:h-[calc(100%-4rem)] lg:items-center">
+        <div className="flex flex-col xl:flex-row justify-center items-center gap-2 lg:gap-4 md:w-4/5 xl:w-11/12 xl:h-5/6">
+          <p className="text-justify text-sm md:text-xl lg:text-2xl xl:text-xl animate__animated animate__fadeInBottomRight animate__delay-1s">
             {`Siamo emozionati di inaugurare la nostra macelleria, un nuovo capitolo
           di un'eredità di eccellenza nel settore. Con giorni di apertura appena
           alle spalle, portiamo con noi decenni di esperienza e dedizione alla
@@ -25,9 +25,9 @@ const AboutPage = () => {
           l'innovazione in ogni fetta di carne.`}
           </p>
           <Image
-            className="mb-4 animate__animated animate__fadeInBottomLeft animate__delay-1s h-auto rounded-sm border-solid border-2 border-orange-300"
+            className="animate__animated animate__fadeInBottomLeft animate__delay-1s rounded-sm border-solid border-2 border-orange-300 xl:h-full"
             src={logo}
-            width={300}
+            objectFit="contain"
             alt="Chi Siamo"
             placeholder="blur"
             quality={100}
