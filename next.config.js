@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  env: {
+    phoneNumber: '393458503417',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
