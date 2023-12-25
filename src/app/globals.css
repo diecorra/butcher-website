@@ -33,3 +33,7 @@ h1 {
 .icon {
   @apply text-3xl cursor-pointer;
 }
+
+li {
+  @apply md:text-2xl;
+}
