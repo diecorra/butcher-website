@@ -56,9 +56,6 @@ const Navbar = () => {
           <Link href="/about" className="nav-link">
             Chi Siamo
           </Link>
-          <Link href="/contacts" className="nav-link">
-            Contatti
-          </Link>
         </div>
 
         <div className="lg:hidden z-30">
@@ -94,9 +91,6 @@ const Navbar = () => {
         </Link>
         <Link href="/about" className="nav-link">
           Chi Siamo
-        </Link>
-        <Link href="/contacts" className="nav-link">
-          Contatti
         </Link>
         <div className="flex flex-row gap-10">
           <Link href={igLink}>
