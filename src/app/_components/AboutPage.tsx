@@ -12,7 +12,7 @@ const AboutPage = () => {
       </div>
       <div className="md:w-full md:flex md:justify-center xl:h-[calc(100%-4rem)] lg:items-center">
         <div className="flex flex-col xl:flex-row justify-center items-center gap-2 lg:gap-4 md:w-4/5 xl:w-11/12 xl:h-5/6">
-          <p className="text-justify text-sm md:text-xl lg:text-2xl xl:text-xl animate__animated animate__fadeInBottomRight animate__delay-1s">
+          <p className="text-justify text-sm md:text-xl lg:text-2xl xl:text-xl animate__animated animate__fadeInBottomRight animate__delay-0.5s">
             {`Siamo emozionati di inaugurare la nostra macelleria, un nuovo capitolo
           di un'eredità di eccellenza nel settore. Con giorni di apertura appena
           alle spalle, portiamo con noi decenni di esperienza e dedizione alla
@@ -27,7 +27,7 @@ const AboutPage = () => {
           l'innovazione in ogni fetta di carne.`}
           </p>
           <Image
-            className="animate__animated animate__fadeInBottomLeft animate__delay-1s rounded-sm border-solid border-2 border-orange-300 xl:h-full"
+            className="animate__animated animate__fadeInBottomLeft animate__delay-0.5s rounded-sm border-solid border-2 border-orange-300 xl:h-full"
             src={logo}
             objectFit="contain"
             alt="Chi Siamo"

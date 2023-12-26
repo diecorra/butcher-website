@@ -11,7 +11,7 @@ body {
 }
 
 .page {
-  @apply w-full h-full overflow-y-auto overflow-x-hidden px-8 md:px-20 lg:p-0;
+  @apply w-full h-full overflow-y-auto lg:overflow-y-hidden overflow-x-hidden px-8 md:px-20 lg:p-0;
 }
 
 .mobile-navbar {
