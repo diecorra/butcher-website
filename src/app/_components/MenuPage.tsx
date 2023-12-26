@@ -6,8 +6,8 @@ const MenuPage = () => {
   return (
     <section className="w-full z-10 relative flex flex-col pb-2">
       <div className="h-16 top-0 w-full flex justify-center items-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-orange-300 pb-7 pt-5 ">
-          MENU'
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-orange-300 pb-7 pt-14 ">
+          {`MENÙ`}
         </h1>
       </div>
       <div className="xl:flex xl:flex-row xl:pt-16 xl:gap-5">

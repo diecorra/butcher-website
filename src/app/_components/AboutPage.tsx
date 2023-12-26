@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <section className="w-full lg:h-screen z-10 relative">
       <div className="h-16 top-0 w-full flex justify-center items-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-orange-300 pb-7 pt-5 ">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-orange-300 pb-7 pt-14 ">
           CHI SIAMO
         </h1>
       </div>
