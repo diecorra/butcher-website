@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 * {
-  @apply text-base text-white m-0 p-0;
+  @apply text-base text-[whitesmoke] m-0 p-0 box-border scroll-smooth;
 }
 
-body {
-  @apply bg-black bg-[url('../../public/images/background.jpg')] bg-no-repeat bg-fixed bg-cover;
-}
-
-.page {
-  @apply w-full h-full overflow-y-auto lg:overflow-y-hidden overflow-x-hidden px-8 md:px-20 lg:p-0;
+.background {
+  @apply bg-black bg-[url('../../public/images/background.webp')] bg-no-repeat bg-cover h-screen w-full -z-10;
 }
 
 .mobile-navbar {
@@ -36,4 +32,8 @@ h1 {
 
 li {
   @apply md:text-2xl;
+}
+
+.homeButton {
+  @apply p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit hover:border-orange-300;
 }

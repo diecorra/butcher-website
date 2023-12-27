@@ -1,16 +1,20 @@
 import Navbar from './_components/Navbar';
 import HomePage from './_components/HomePage';
-import { twMerge } from 'tailwind-merge';
 import BackgroundOpacity from './_shared/BackgroundOpacity';
+import MenuPage from './_components/MenuPage';
+import AboutPage from './_components/AboutPage';
 
 export default async function Home() {
   return (
-    <div className={twMerge('h-screen', 'h-[calc(100dvh)]')}>
+    <>
+      <div className="background fixed inset-0" />
+      <BackgroundOpacity />
       <Navbar />
-      <section className="page">
-        <BackgroundOpacity />
+      <div className="container">
         <HomePage />
-      </section>
-    </div>
+        <MenuPage />
+        <AboutPage />
+      </div>
+    </>
   );
 }
