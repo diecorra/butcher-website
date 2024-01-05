@@ -31,9 +31,26 @@ h1 {
 }
 
 li {
-  @apply md:text-2xl;
+  @apply md:text-2xl text-black;
 }
 
 .homeButton {
   @apply p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit hover:border-orange-300;
+}
+
+.tooltip {
+  @apply relative inline-block;
+}
+
+.tooltip .tooltiptext {
+  @apply invisible w-36 md:w-44 xl:w-48 min-h-fit bg-orange-400 shadow-2xl text-white rounded-md py-1 px-4 absolute z-40 -top-1/3 left-[150%] opacity-0 ease-in-out delay-300;
+}
+
+.tooltip .tooltiptext::after {
+  @apply content-[''] absolute top-3 right-full -mt-1 border-[10px] border-solid border-t-transparent border-r-orange-400
+  border-l-transparent border-b-transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  @apply visible opacity-100;
 }

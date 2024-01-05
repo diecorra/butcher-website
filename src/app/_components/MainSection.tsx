@@ -6,9 +6,12 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import 'animate.css/animate.min.css';
 import Link from 'next/link';
 
-const HomePage = () => {
+const MainSection = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center gap-20 z-10 relative">
+    <section
+      id="home"
+      className="section w-full h-screen flex flex-col items-center justify-center gap-20 z-10 relative"
+    >
       <div className="flex flex-col items-center gap-4 animate__animated animate__lightSpeedInLeft animate__delay-0.7s">
         <Title
           text1="CARNI"
@@ -22,20 +25,20 @@ const HomePage = () => {
           target="_blank"
           href={`https://api.whatsapp.com/send?phone=${process.env.phoneNumber}`}
         >
-          <div className="p-1 px-2 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomLeft animate__delay-1s hover:border-orange-300">
+          <button className="homeButton animate__fadeInBottomLeft animate__animated animate__delay-1s">
             <IoLogoWhatsapp className="icon block" fill="#25D366" />
             Vuoi ordinare?
-          </div>
+          </button>
         </Link>
-        <Link href="/menu">
-          <div className="p-1 px-3 flex items-center gap-1 cursor-pointer bg-gray-800 border-solid border-2 border-white rounded-xl w-fit animate__animated animate__fadeInBottomRight animate__delay-1s hover:border-orange-300">
+        <Link href="#menu">
+          <button className="homeButton animate__fadeInBottomRight animate__animated animate__delay-1s">
             <TbMeat className="icon block" fill="red" />
             Menù
-          </div>
+          </button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default HomePage;
+export default MainSection;

@@ -28,37 +28,39 @@ const Navbar = () => {
   }, [isNavOpen]);
 
   return (
-    <nav className="h-16 w-full flex items-center absolute z-20">
+    <nav id="navbar" className="h-16 w-full flex items-center fixed z-30">
       <div className="container px-8 flex justify-between items-center">
         <div className="flex gap-5 items-center">
-          <Link href={igLink} target="_blank">
-            <RiInstagramFill className="hidden lg:block icon hover:fill-orange-300" />
+          <Link href={igLink} aria-label="Instagram" target="_blank">
+            <RiInstagramFill className="naviconElements hidden lg:block icon hover:fill-orange-300" />
           </Link>
-          <Link href={fbLink} target="_blank">
-            <FaSquareFacebook className="icon hidden lg:block hover:fill-orange-300" />
+          <Link href={fbLink} aria-label="Facebook" target="_blank">
+            <FaSquareFacebook className="naviconElements icon hidden lg:block hover:fill-orange-300" />
           </Link>
-          <Link href={`${waApi}${process.env.phoneNumber}`} target="_blank">
-            <IoLogoWhatsapp className="icon hidden lg:block hover:fill-orange-300" />
+          <Link
+            href={`${waApi}${process.env.phoneNumber}`}
+            aria-label="WhatsApp"
+            target="_blank"
+          >
+            <IoLogoWhatsapp className="naviconElements icon hidden lg:block hover:fill-orange-300" />
           </Link>
-          <Link href={placeLink} target="_blank">
-            <MdPlace className="icon hidden lg:block hover:fill-orange-300" />
+          <Link href={placeLink} aria-label="Google Maps" target="_blank">
+            <MdPlace className="naviconElements icon hidden lg:block hover:fill-orange-300" />
           </Link>
         </div>
-
         <div className="hidden lg:flex space-x-4 [&>a]:text-lg">
-          <Link href="/" className="nav-link">
+          <Link href="#home" className="navlinkElements nav-link">
             Home
           </Link>
-          <Link href="/menu" className="nav-link">
+          <Link href="#menu" className="navlinkElements nav-link">
             Menù
           </Link>
-
-          <Link href="/about" className="nav-link">
+          <Link href="#about" className="navlinkElements nav-link">
             Chi Siamo
           </Link>
         </div>
 
-        <div className="lg:hidden z-30">
+        <div className="lg:hidden z-30 fixed right-5">
           <button className="focus:outline-none">
             {changeIcon && (
               <IoMdClose
@@ -83,26 +85,41 @@ const Navbar = () => {
           isNavOpen ? 'left-0' : '-left-full'
         }`}
       >
-        <Link href="/" className="nav-link">
+        <Link
+          href="#home"
+          onClick={() => setIsNavOpen(false)}
+          className="nav-link"
+        >
           Home
         </Link>
-        <Link href="/menu" className="nav-link">
+        <Link
+          href="#menu"
+          onClick={() => setIsNavOpen(false)}
+          className="nav-link"
+        >
           Menù
         </Link>
-        <Link href="/about" className="nav-link">
+        <Link
+          href="#about"
+          onClick={() => setIsNavOpen(false)}
+          className="nav-link"
+        >
           Chi Siamo
         </Link>
         <div className="flex flex-row gap-10">
-          <Link href={igLink}>
+          <Link href={igLink} aria-label="Instagram">
             <RiInstagramFill className="icon" />
           </Link>
-          <Link href={fbLink}>
+          <Link href={fbLink} aria-label="Facebook">
             <FaSquareFacebook className="icon" />
           </Link>
-          <Link href={`${waApi}${process.env.phoneNumber}`}>
+          <Link
+            href={`${waApi}${process.env.phoneNumber}`}
+            aria-label="WhatsApp"
+          >
             <IoLogoWhatsapp className="icon" />
           </Link>
-          <Link href={placeLink}>
+          <Link href={placeLink} aria-label="Google Maps">
             <MdPlace className="icon" />
           </Link>
         </div>
