@@ -30,7 +30,7 @@ const MainSection = () => {
             Vuoi ordinare?
           </button>
         </Link>
-        <Link href="#menu">
+        <Link href="/#menu">
           <button className="homeButton animate__fadeInBottomRight animate__animated animate__delay-1s">
             <TbMeat className="icon block" fill="red" />
             Menù

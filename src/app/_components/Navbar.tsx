@@ -49,13 +49,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden lg:flex space-x-4 [&>a]:text-lg">
-          <Link href="#home" className="navlinkElements nav-link">
+          <Link href="/#home" className="navlinkElements nav-link">
             Home
           </Link>
-          <Link href="#menu" className="navlinkElements nav-link">
+          <Link href="/#menu" className="navlinkElements nav-link">
             Menù
           </Link>
-          <Link href="#about" className="navlinkElements nav-link">
+          <Link href="/#about" className="navlinkElements nav-link">
             Chi Siamo
           </Link>
         </div>
@@ -86,21 +86,21 @@ const Navbar = () => {
         }`}
       >
         <Link
-          href="#home"
+          href="/#home"
           onClick={() => setIsNavOpen(false)}
           className="nav-link"
         >
           Home
         </Link>
         <Link
-          href="#menu"
+          href="/#menu"
           onClick={() => setIsNavOpen(false)}
           className="nav-link"
         >
           Menù
         </Link>
         <Link
-          href="#about"
+          href="/#about"
           onClick={() => setIsNavOpen(false)}
           className="nav-link"
         >
