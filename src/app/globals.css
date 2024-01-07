@@ -31,7 +31,7 @@ h1 {
 }
 
 li {
-  @apply md:text-2xl text-black;
+  @apply text-base md:text-2xl text-black;
 }
 
 .homeButton {

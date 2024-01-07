@@ -17,7 +17,7 @@ function Tooltip({ text, text1, text2, text3, text4, children }: tooltipProps) {
     <div className="tooltip">
       {children}
       <div className="tooltiptext">
-        <h5 className="bg-[rgba(31,41,55,1)] text-center rounded-xl text-lg">
+        <h5 className=" text-black text-xl md:text-2xl text-center rounded-xl">
           INGREDIENTI
         </h5>
         <ul className="list-disc list-inside">
