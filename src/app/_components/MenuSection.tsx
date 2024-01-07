@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
-import menu1 from '../../../public/images/menu/bombetta.jpg';
+import bombette from '../../../public/images/menu/bombetta.jpg';
+import polpette from '../../../public/images/menu/polpette.png';
 import FoodType from '../_shared/FoodType';
 import { FaInfoCircle } from 'react-icons/fa';
 import Tooltip from './Tooltip';
@@ -61,6 +62,11 @@ const MenuSection = () => {
                 text2="sale"
                 text3="pepe"
                 text4="uova"
+                text5="panna da cucina"
+                text6="noce moscata"
+                text7="prezzemolo"
+                text8="grana"
+                text9="fecola di patate"
               >
                 <div className="w-2/12">
                   <FaInfoCircle size={20} fill="black" />
@@ -71,7 +77,7 @@ const MenuSection = () => {
           <div className="w-1/2 px-2 flex flex-col">
             <Image
               className="rounded-xl"
-              src={menu1}
+              src={polpette}
               objectFit="contain"
               alt="Chi Siamo"
               placeholder="blur"
@@ -114,7 +120,7 @@ const MenuSection = () => {
           <div className="w-1/2 px-2 flex flex-col">
             <Image
               className="rounded-xl"
-              src={menu1}
+              src={bombette}
               objectFit="contain"
               alt="Chi Siamo"
               placeholder="blur"
