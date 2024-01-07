@@ -23,7 +23,7 @@ h1 {
 }
 
 .nav-link {
-  @apply cursor-pointer hover:text-orange-300;
+  @apply cursor-pointer hover:text-orange-800;
 }
 
 .icon {
