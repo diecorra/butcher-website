@@ -5,6 +5,8 @@ import { TbMeat } from 'react-icons/tb';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import 'animate.css/animate.min.css';
 import Link from 'next/link';
+import Image from 'next/image';
+import logo from '../../../public/images/gluten_free_logo.png';
 
 const MainSection = () => {
   return (
@@ -18,7 +20,16 @@ const MainSection = () => {
           text2="SCELTE"
           Icon={<GiBull className="iconTitle" fill="#f6727b" />}
         />
-        <h2 className="text-xl">La migliore qualità, al miglior prezzo.</h2>
+        <h2 className="text-lg md:text-xl">
+          La migliore qualità, al miglior prezzo.
+        </h2>
+        <Image
+          className="h-20 w-auto"
+          src={logo}
+          alt="GlutenFree Logo"
+          placeholder="blur"
+          quality={100}
+        ></Image>
       </div>
       <div className="flex gap-4">
         <Link
