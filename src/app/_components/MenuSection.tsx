@@ -31,30 +31,31 @@ const MenuSection = () => {
       className="section h-screen flex flex-col -mb-2 p-5 bg-orange-300 rounded-t-2xl relative shadow-2xl"
     >
       <div className="w-full flex flex-col justify-center items-center z-10 gap-20">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-black">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-sky-950">
           {`MENÙ`}
         </h1>
-        <h3 className="text-black md:text-xl lg:text-3xl">
+        <h3 className="text-sky-950 md:text-xl lg:text-3xl">
           Tutti i prodotti sono disponibili senza glutine.
         </h3>
       </div>
       <div className="xl:h-full xl:flex xl:flex-row xl:justify-center xl:gap-3 xl:items-center">
-        <div className="flex flex-row xl:h-72 w-full xl:w-2/5 p-2 border-solid border-2 border-black rounded-xl">
+        <div className="flex flex-row xl:h-72 w-full xl:w-2/5 p-2 border-solid border-2 border-sky-950 rounded-xl">
           <div className="w-1/2 px-2 flex flex-col">
             <FoodType
               style={{
                 borderTopRightRadius: '5px',
                 borderTopLeftRadius: '5px',
-                backgroundColor: 'rgba(2,132, 199,1)',
-                borderColor: 'black',
+                backgroundColor: 'rgba(31,41,55,1)',
+                borderColor: 'rgba(31,41,55,1)',
                 borderWidth: '2px',
                 display: 'flex',
                 justifyContent: 'center',
                 width: '100%',
+                color: 'white',
               }}
               foodName="POLPETTE"
             />
-            <div className="bg-orange-300 w-full flex flex-row items-center border-x-2 border-b-2 rounded-b-lg border-solid border-black">
+            <div className="bg-orange-300 w-full flex flex-row items-center border-x-2 border-b-2 rounded-b-lg border-solid border-sky-950">
               <FoodType foodName="Polpetta classica" />
               <Tooltip
                 text="carne bovina"
@@ -69,7 +70,7 @@ const MenuSection = () => {
                 text9="fecola di patate"
               >
                 <div className="w-2/12">
-                  <FaInfoCircle size={20} fill="black" />
+                  <FaInfoCircle size={20} fill="rgba(31,41,55,1)" />
                 </div>
               </Tooltip>
             </div>
@@ -85,34 +86,35 @@ const MenuSection = () => {
             />
           </div>
         </div>
-        <div className="mt-2 xl:mt-0 flex flex-row xl:h-72 w-full xl:w-2/5 p-2 border-solid border-2 border-black rounded-xl">
+        <div className="mt-2 xl:mt-0 flex flex-row xl:h-72 w-full xl:w-2/5 p-2 border-solid border-2 border-sky-950 rounded-xl">
           <div className="w-1/2 px-2 flex flex-col">
             <FoodType
               style={{
                 borderTopRightRadius: '5px',
                 borderTopLeftRadius: '5px',
-                backgroundColor: 'rgba(2,132, 199,1)',
-                borderColor: 'black',
+                backgroundColor: 'rgba(31,41,55,1)',
+                borderColor: 'rgba(31,41,55,1)',
                 borderWidth: '2px',
                 display: 'flex',
                 justifyContent: 'center',
                 width: '100%',
+                color: 'white',
               }}
               foodName="BOMBETTE"
             />
-            <div className="bg-orange-300 w-full flex flex-row items-center border-x-2 border-solid border-black">
+            <div className="bg-orange-300 w-full flex flex-row items-center border-x-2 border-solid border-sky-950">
               <FoodType foodName="Bombetta speck/scamorza" />
               <Tooltip text="speck" text1="scamorza">
                 <div className="w-2/12">
-                  <FaInfoCircle size={20} fill="black" />
+                  <FaInfoCircle size={20} fill="rgba(31,41,55,1)" />
                 </div>
               </Tooltip>
             </div>
-            <div className="bg-orange-300 w-full flex flex-row items-center rounded-b-lg border-2 border-solid border-black">
+            <div className="bg-orange-300 w-full flex flex-row items-center rounded-b-lg border-2 border-solid border-sky-950">
               <FoodType foodName="Bombetta pancetta/phil." />
               <Tooltip text="pancetta" text1="philadelphia">
                 <div className="w-2/12">
-                  <FaInfoCircle size={20} fill="black" />
+                  <FaInfoCircle size={20} fill="rgba(31,41,55,1)" />
                 </div>
               </Tooltip>
             </div>

@@ -31,7 +31,7 @@ function Tooltip({
     <div className="tooltip">
       {children}
       <div className="tooltiptext">
-        <h5 className=" text-black text-xl md:text-2xl text-center rounded-xl">
+        <h5 className=" text-white text-xl md:text-2xl text-center rounded-xl">
           INGREDIENTI
         </h5>
         <ul className="list-disc list-inside">

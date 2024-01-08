@@ -32,20 +32,20 @@ const Navbar = () => {
       <div className="container px-8 flex justify-between items-center">
         <div className="flex gap-5 items-center">
           <Link href={igLink} aria-label="Instagram" target="_blank">
-            <RiInstagramFill className="naviconElements hidden lg:block icon hover:fill-orange-800" />
+            <RiInstagramFill className="naviconElements hidden lg:block icon hover:fill-orange-600" />
           </Link>
           <Link href={fbLink} aria-label="Facebook" target="_blank">
-            <FaSquareFacebook className="naviconElements icon hidden lg:block hover:fill-orange-800" />
+            <FaSquareFacebook className="naviconElements icon hidden lg:block hover:fill-orange-600" />
           </Link>
           <Link
             href={`${waApi}${process.env.phoneNumber}`}
             aria-label="WhatsApp"
             target="_blank"
           >
-            <IoLogoWhatsapp className="naviconElements icon hidden lg:block hover:fill-orange-800" />
+            <IoLogoWhatsapp className="naviconElements icon hidden lg:block hover:fill-orange-600" />
           </Link>
           <Link href={placeLink} aria-label="Google Maps" target="_blank">
-            <MdPlace className="naviconElements icon hidden lg:block hover:fill-orange-800" />
+            <MdPlace className="naviconElements icon hidden lg:block hover:fill-orange-600" />
           </Link>
         </div>
         <div className="hidden lg:flex space-x-4 [&>a]:text-lg">

@@ -8,10 +8,10 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="section w-full min-h-screen xl:h-screen z-20 flex flex-col p-5 bg-sky-600 rounded-t-2xl shadow-2xl relative"
+      className="section w-full min-h-screen xl:h-screen z-20 flex flex-col p-5 bg-sky-950 rounded-t-2xl shadow-2xl relative"
     >
       <div className="h-20 w-full flex justify-center items-center pt-10 md:py-16 z-10">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl text-black pb-7">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl text-white pb-7">
           {`CHI SIAMO`}
         </h1>
       </div>
@@ -21,7 +21,7 @@ const AboutSection = () => {
             {aboutDescription}
           </p>
           <Image
-            className="border-solid border-2 border-black rounded-2xl w-auto shadow-2xl"
+            className="border-solid border-2 border-sky-950 rounded-2xl w-auto shadow-2xl"
             src={logo}
             alt="Chi Siamo"
             placeholder="blur"

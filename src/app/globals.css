@@ -23,7 +23,7 @@ h1 {
 }
 
 .nav-link {
-  @apply cursor-pointer hover:text-orange-800;
+  @apply cursor-pointer hover:text-orange-600;
 }
 
 .icon {
@@ -31,7 +31,7 @@ h1 {
 }
 
 li {
-  @apply text-base md:text-2xl text-black;
+  @apply text-base md:text-2xl text-sky-950;
 }
 
 .homeButton {
