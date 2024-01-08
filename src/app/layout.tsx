@@ -5,6 +5,7 @@ import './globals.css';
 const oswald = Oswald({
   subsets: ['latin'],
   variable: '--font-oswald',
+  weight: ['300'],
 });
 
 export const metadata: Metadata = {

@@ -54,3 +54,7 @@ li {
 .tooltip:hover .tooltiptext {
   @apply visible opacity-100;
 }
+
+b {
+  @apply text-sm md:text-xl lg:text-2xl xl:text-xl;
+}
