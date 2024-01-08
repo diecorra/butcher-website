@@ -80,7 +80,7 @@ const MenuSection = () => {
               className="rounded-xl"
               src={polpette}
               objectFit="contain"
-              alt="Chi Siamo"
+              alt="Polpetta"
               placeholder="blur"
               quality={100}
             />
@@ -124,7 +124,7 @@ const MenuSection = () => {
               className="rounded-xl"
               src={bombette}
               objectFit="contain"
-              alt="Chi Siamo"
+              alt="Bombetta"
               placeholder="blur"
               quality={100}
             />
