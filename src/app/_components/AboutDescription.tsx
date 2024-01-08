@@ -7,7 +7,7 @@ const AboutDescription = () => {
       Siamo emozionati di inaugurare la nostra macelleria, un nuovo capitolo di
       un&apos; eredità di <b>eccellenza</b> nel settore.
       <br />
-      Con giorni di apertura appena alle spalle, portiamo con noi decenni di
+      Con giorni di apertura appena alle spalle, portiamo con noi decenni di{' '}
       <b>esperienza e dedizione</b> alla carne di qualità.
       <br />
       <br />
