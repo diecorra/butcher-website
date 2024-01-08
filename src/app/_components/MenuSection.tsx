@@ -30,11 +30,11 @@ const MenuSection = () => {
       id="menu"
       className="section h-screen flex flex-col -mb-2 p-5 bg-orange-300 rounded-t-2xl relative shadow-2xl"
     >
-      <div className="w-full flex flex-col justify-center items-center z-10 gap-20">
+      <div className="w-full flex flex-col justify-center items-center z-10 gap-5 lg:gap-20">
         <h1 className="text-4xl md:text-5xl lg:text-6xl text-sky-950">
           {`MENÙ`}
         </h1>
-        <h3 className="text-sky-950 md:text-xl lg:text-3xl">
+        <h3 className="text-sky-950 md:text-xl lg:text-3xl pb-5">
           Tutti i prodotti sono disponibili senza glutine.
         </h3>
       </div>

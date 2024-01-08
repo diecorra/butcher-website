@@ -21,6 +21,7 @@ const AboutDescription = () => {
       condividere la nostra storia e consigliarvi nella scelta dei migliori
       tagli per le vostre preparazioni.
       <br />
+      <br />
       Venite a scoprire la differenza che fa la nostra esperienza, dove la
       tradizione incontra l&apos; innovazione in ogni fetta di carne.
     </p>
