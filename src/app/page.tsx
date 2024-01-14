@@ -3,6 +3,7 @@ import MainSection from './_components/MainSection';
 import BackgroundOpacity from './_shared/BackgroundOpacity';
 import MenuSection from './_components/MenuSection';
 import AboutSection from './_components/AboutSection';
+import Footer from './_components/Footer';
 
 export default async function Home() {
   return (
@@ -16,6 +17,7 @@ export default async function Home() {
           <MenuSection />
           <AboutSection />
         </div>
+        <Footer />
       </div>
     </>
   );
