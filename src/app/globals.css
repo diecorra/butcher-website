@@ -6,6 +6,10 @@
   @apply text-base text-[whitesmoke] m-0 p-0 box-border scroll-smooth;
 }
 
+.page {
+  @apply h-full;
+}
+
 .background {
   @apply bg-black bg-[url('../../public/images/background.webp')] bg-no-repeat bg-cover h-screen w-full -z-10;
 }
